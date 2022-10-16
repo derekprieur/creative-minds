@@ -8,7 +8,7 @@ import { BsTrash2Fill } from 'react-icons/bs'
 import { AiFillEdit } from 'react-icons/ai'
 import Link from "next/link"
 
-const dashboard = () => {
+const Dashboard = () => {
     const route = useRouter()
     const [user, loading] = useAuthState(auth)
     const [posts, setPosts] = useState([])
@@ -56,4 +56,4 @@ const dashboard = () => {
     )
 }
 
-export default dashboard
+export default Dashboard

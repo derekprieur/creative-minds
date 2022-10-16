@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import { collection, addDoc, serverTimestamp, doc, updateDoc } from 'firebase/firestore'
 import { toast } from 'react-toastify'
 
-const post = () => {
+const Post = () => {
     // form state
     const [post, setPost] = useState({ description: '' })
     const [user, loading] = useAuthState(auth)
@@ -85,4 +85,4 @@ const post = () => {
     )
 }
 
-export default post
+export default Post
